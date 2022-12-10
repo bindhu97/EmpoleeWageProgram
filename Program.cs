@@ -14,7 +14,8 @@ public class Program
                 "3) Find Employee PartTime Wage\n" +
                 "4) Find Switch Case Condition\n" + 
                 "5) Find Employee Monthly Wage\n" + 
-                "6) Find Employee Total Working Hours\n");
+                "6) Find Employee Total Working Hours\n" + 
+                "7) Find Refactor method\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -52,6 +53,12 @@ public class Program
                     Console.WriteLine("Employee Total Working Hours");
                     TotalWorkingHours totalWorkingHours = new TotalWorkingHours();
                     totalWorkingHours.WorkingHourWage();
+                    break;
+
+                    case 7:
+                    Console.WriteLine("Refactor method");
+                    Refactor refactor = new Refactor();
+                    refactor.Refactor1();
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
