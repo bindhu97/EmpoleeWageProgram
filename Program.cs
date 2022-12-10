@@ -15,7 +15,8 @@ public class Program
                 "4) Find Switch Case Condition\n" + 
                 "5) Find Employee Monthly Wage\n" + 
                 "6) Find Employee Total Working Hours\n" + 
-                "7) Find Refactor method\n");
+                "7) Find Refactor method\n" + 
+                "8) Find Employee Wage For Multiple Companies\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -59,6 +60,13 @@ public class Program
                     Console.WriteLine("Refactor method");
                     Refactor refactor = new Refactor();
                     refactor.Refactor1();
+                    break;
+
+                    case 8:
+                    Console.WriteLine("Employee Wage For Multiple Companies");
+                    MultipleCompanies company = new MultipleCompanies();
+                    MultipleCompanies.multiple("Amazon", 40, 15, 200);
+                    MultipleCompanies.multiple("BigBazar", 20, 20, 100);
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
