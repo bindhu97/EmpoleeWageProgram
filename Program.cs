@@ -12,7 +12,8 @@ public class Program
                 "1) Find Employee Present or Absent\n" +
                 "2) Find Employee Daily Wage\n" +
                 "3) Find Employee PartTime Wage\n" +
-                "4) Find Switch Case Condition\n");
+                "4) Find Switch Case Condition\n" + 
+                "5) Find Employee Monthly Wage\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -38,6 +39,12 @@ public class Program
                     Console.WriteLine("Switch Case Condition");
                     SwitchCase switchCase = new SwitchCase();
                     switchCase.Switch();
+                    break;
+
+                    case 5:
+                    Console.WriteLine("Employee Monthly Wage");
+                    MonthlyWage monthlyWage = new MonthlyWage();
+                    monthlyWage.monthy();
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
