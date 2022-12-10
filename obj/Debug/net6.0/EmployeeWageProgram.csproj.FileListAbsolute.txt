@@ -1,0 +1,15 @@
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\bin\Debug\net6.0\EmployeeWageProgram.exe
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\bin\Debug\net6.0\EmployeeWageProgram.deps.json
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\bin\Debug\net6.0\EmployeeWageProgram.runtimeconfig.json
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\bin\Debug\net6.0\EmployeeWageProgram.dll
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\bin\Debug\net6.0\EmployeeWageProgram.pdb
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\EmployeeWageProgram.csproj.AssemblyReference.cache
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\EmployeeWageProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\EmployeeWageProgram.AssemblyInfoInputs.cache
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\EmployeeWageProgram.AssemblyInfo.cs
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\EmployeeWageProgram.csproj.CoreCompileInputs.cache
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\EmployeeWageProgram.dll
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\refint\EmployeeWageProgram.dll
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\EmployeeWageProgram.pdb
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\EmployeeWageProgram.genruntimeconfig.cache
+C:\Users\91973\source\repos\EmployeeWageProgram\EmployeeWageProgram\obj\Debug\net6.0\ref\EmployeeWageProgram.dll
