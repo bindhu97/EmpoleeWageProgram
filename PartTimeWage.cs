@@ -16,7 +16,7 @@ namespace EmployeeWageProgram
             int dailyWage = 0;
 
             Random rand = new Random();
-            int employeeCheck = rand.Next(0, 2);
+            int employeeCheck = rand.Next(0, 3);
             if (employeeCheck == 2)
             {
                 dailyWage = fullTimeHour * wagePerHour;
