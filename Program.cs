@@ -17,7 +17,8 @@ public class Program
                 "6) Find Employee Total Working Hours\n" + 
                 "7) Find Refactor method\n" + 
                 "8) Find Employee Wage For Multiple Companies\n" + 
-                "9) Find Employee Wage & Save TotalWage by each Company\n");
+                "9) Find Employee Wage & Save TotalWage by each Company\n" + 
+                "10) Find Employee Wage In Multiple Companies using Interface Approach\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -78,6 +79,13 @@ public class Program
                     Console.WriteLine(Amazon.ToString());
                     BigBazar.computeEmpWage();
                     Console.WriteLine(BigBazar.ToString());
+                    break;
+
+                    case 10:
+                        EmpWageInterfaceApproach empWageInterface = new EmpWageInterfaceApproach();
+                    empWageInterface.addCompanyEmpWage("Amazon", 40, 15, 200);
+                    empWageInterface.addCompanyEmpWage("BigBazar", 20, 20, 100);
+                    empWageInterface.computeEmpWage();
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
