@@ -16,7 +16,8 @@ public class Program
                 "5) Find Employee Monthly Wage\n" + 
                 "6) Find Employee Total Working Hours\n" + 
                 "7) Find Refactor method\n" + 
-                "8) Find Employee Wage For Multiple Companies\n");
+                "8) Find Employee Wage For Multiple Companies\n" + 
+                "9) Find Employee Wage & Save TotalWage by each Company\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -67,6 +68,16 @@ public class Program
                     MultipleCompanies company = new MultipleCompanies();
                     MultipleCompanies.multiple("Amazon", 40, 15, 200);
                     MultipleCompanies.multiple("BigBazar", 20, 20, 100);
+                    break;
+
+                    case 9:
+                    Console.WriteLine("Employee Wage & Save total wage by each Company");
+                    SaveTotalWage Amazon = new SaveTotalWage("Amazon", 40, 15, 200);
+                    SaveTotalWage BigBazar = new SaveTotalWage("BigBazar", 20, 20, 100);
+                    Amazon.computeEmpWage();
+                    Console.WriteLine(Amazon.ToString());
+                    BigBazar.computeEmpWage();
+                    Console.WriteLine(BigBazar.ToString());
                     break;
                 default:
                     Console.WriteLine("Choose valid option");
