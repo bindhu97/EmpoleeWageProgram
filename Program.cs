@@ -95,6 +95,7 @@ public class Program
                     storeDailyWage.addCompanyEmpWage("BigBazar", 20, 20, 100);
                     storeDailyWage.computeEmpWage();
                     Console.WriteLine("Total Wage for Amazon Company: " + storeDailyWage.getTotalWage("Amazon"));
+                    Console.WriteLine("Total Wage for BigBazar Company: " + storeDailyWage.getTotalWage("BigBazar"));
                     break;
 
                 default:

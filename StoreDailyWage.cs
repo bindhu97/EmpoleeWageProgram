@@ -10,9 +10,12 @@ namespace EmployeeWageProgram
     {
         public const int PART_TIME = 1;
         public const int FULL_TIME = 2;
+        public int totalEmpHrs = 0;
 
         private LinkedList<CompanyEmpWage> companyEmpWageList;
         private Dictionary<string, CompanyEmpWage> companyToEmpWageMap;
+        private int MAX_WORKING_HRS;
+        private int NUM_WORKING_DAYS;
 
         public StoreDailyWage()
         {
@@ -35,7 +38,29 @@ namespace EmployeeWageProgram
         }
         private int computeEmpWage(CompanyEmpWage companyEmpWage)
         {
-            return this.companyEmpWageList.Count;
+            int totalEmpHrs = 0, empHrs = 0, totalWorkingDays = 0;
+
+            while (totalEmpHrs <= MAX_WORKING_HRS && totalWorkingDays < NUM_WORKING_DAYS)
+            {
+                totalWorkingDays++;
+                Random random = new Random();
+                int empType = random.Next(0, 3);
+                switch (empType)
+                {
+                    case FULL_TIME:
+                        empHrs = 8;
+                        break;
+                    case PART_TIME:
+                        empHrs = 4;
+                        break;
+                    default:
+                        empHrs = 0;
+                        break;
+                }
+                totalEmpHrs += empHrs;
+                Console.WriteLine("Day#:" + totalWorkingDays + "Emp Hrs:" + empHrs);
+            }
+            return totalEmpHrs * companyEmpWage.EMP_WAGE_PER_HR;
         }
         public int getTotalWage(string company)
         {
