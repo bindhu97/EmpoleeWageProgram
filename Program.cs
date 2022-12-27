@@ -3,7 +3,9 @@
 EmployeeWageCompute EmpPresentAbsent = new EmployeeWageCompute();
 //EmpPresentAbsent.EmployeePresentAbsent();
 //EmployeeWageCompute.DailyEmployeeWage();
-EmployeeWageCompute.EmployeePartTimeWage();
+//EmployeeWageCompute.EmployeePartTimeWage();
+EmployeeWageCompute.EmployeeWageSwitchCase();
+
 
 
 
