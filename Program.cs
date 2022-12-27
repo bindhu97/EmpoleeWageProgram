@@ -5,4 +5,5 @@ EmployeeWageCompute EmpPresentAbsent = new EmployeeWageCompute();
 //EmployeeWageCompute.DailyEmployeeWage();
 //EmployeeWageCompute.EmployeePartTimeWage();
 //EmployeeWageCompute.EmployeeWageSwitchCase();
-EmployeeWageCompute.MonthlyWage();
+//EmployeeWageCompute.MonthlyWage();
+EmployeeWageCompute.TotalWorkingHours();
