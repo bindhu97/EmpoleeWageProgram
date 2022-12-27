@@ -1,8 +1,12 @@
 ﻿using EmployeeWageProgram;
 
-Console.WriteLine("Employee Present or Absent");
-EmployeeWageCompute emppresentabsent = new EmployeeWageCompute();
-emppresentabsent.PresentAbsent();
+EmployeeWageCompute EmpPresentAbsent = new EmployeeWageCompute();
+//EmpPresentAbsent.EmployeePresentAbsent();
+EmployeeWageCompute.DailyEmployeeWage();
+
+
+
+
 
 
 
