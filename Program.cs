@@ -3,7 +3,7 @@ using static EmployeeWageProgram.EmployeeWageCompute;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
         EmployeeWageCompute EmpPresentAbsent = new EmployeeWageCompute();
         //EmpPresentAbsent.EmployeePresentAbsent();
@@ -15,11 +15,15 @@ internal class Program
         //EmployeeWageCompute.Refactor();
         //EmployeeWageCompute.EmployeeWageMultipleCompany("Dmart", 20, 20, 100);
         //EmployeeWageCompute.EmployeeWageMultipleCompany("Reliance", 10, 20, 100);
-        EmpWageForMultipleCompany Dmart = new EmpWageForMultipleCompany("Dmart", 20, 20, 100);
-        EmpWageForMultipleCompany Reliance = new EmpWageForMultipleCompany("Reliance", 10, 20, 100);
-        Dmart.ComputeEmpWage();
-        Console.WriteLine(Dmart.ToString());
-        Reliance.ComputeEmpWage();
-        Console.WriteLine(Reliance.ToString());
+        //EmpWageForMultipleCompany Dmart = new EmpWageForMultipleCompany("Dmart", 20, 20, 100);
+        //EmpWageForMultipleCompany Reliance = new EmpWageForMultipleCompany("Reliance", 10, 20, 100);
+        //Dmart.ComputeEmpWage();
+        //Console.WriteLine(Dmart.ToString());
+        //Reliance.ComputeEmpWage();
+        //Console.WriteLine(Reliance.ToString());
+        EmpWageBuilderArray empWageBuilderArray = new EmpWageBuilderArray();
+        empWageBuilderArray.addCompanyEmpWage("Dmart", 20, 20, 100);
+        empWageBuilderArray.addCompanyEmpWage("Reliance", 10, 20, 100);
+        empWageBuilderArray.computeEmpWage();
     }
 }
