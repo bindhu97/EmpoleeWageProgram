@@ -2,7 +2,9 @@
 
 EmployeeWageCompute EmpPresentAbsent = new EmployeeWageCompute();
 //EmpPresentAbsent.EmployeePresentAbsent();
-EmployeeWageCompute.DailyEmployeeWage();
+//EmployeeWageCompute.DailyEmployeeWage();
+EmployeeWageCompute.EmployeePartTimeWage();
+
 
 
 
