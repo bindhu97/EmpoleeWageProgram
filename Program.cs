@@ -1,8 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using EmployeeWage;
+using EmployeeWageProgram;
+using static EmployeeWageProgram.EmployeeWageCompute;
 
 Console.WriteLine("Welcome to Employee Wage Computation Program");
 
-Console.WriteLine("Calling Employee Present or Absent");
 EmployeeWageCompute emppresentabsent = new EmployeeWageCompute();
-emppresentabsent.PresentAbsent();
+//emppresentabsent.PresentAbsent();
+EmployeeWageCompute.DailyEmployeeWage();
