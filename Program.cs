@@ -1,6 +1,12 @@
-﻿using EmployeeWageProgram;
+﻿using System;
 
-EmployeeWageCompute EmpPresentAbsent = new EmployeeWageCompute();
-//EmpPresentAbsent.EmployeePresentAbsent();
-//EmployeeWageCompute.DailyEmployeeWage();
-EmployeeWageCompute.EmployeePartTimeWage();
+namespace EmployeeWageProgram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            EmployeeWageCompute.EmpWage();
+        }
+    }
+}
