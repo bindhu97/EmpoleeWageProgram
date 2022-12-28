@@ -6,8 +6,12 @@ namespace EmployeeWageProgram
     {
         static void Main(string[] args)
         {
-            EmployeeWageCompute.computeEmpWage("DMart", 20, 2, 10);
-            EmployeeWageCompute.computeEmpWage("Reliance", 20, 4, 10);
+            EmployeeWageCompute Dmart = new EmployeeWageCompute("Dmart", 20, 2, 10);
+            EmployeeWageCompute Reliance = new EmployeeWageCompute("Reliance", 20, 4, 10);
+            Dmart.computeEmpWage();
+            Console.WriteLine(Dmart.toString());
+            Reliance.computeEmpWage();
+            Console.WriteLine(Reliance.toString());
         }
     }
 }
