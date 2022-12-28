@@ -1,12 +1,13 @@
-﻿using EmployeeWageProgram;
+﻿using System;
 
-EmployeeWageCompute EmpPresentAbsent = new EmployeeWageCompute();
-//EmpPresentAbsent.EmployeePresentAbsent();
-//EmployeeWageCompute.DailyEmployeeWage();
-//EmployeeWageCompute.EmployeePartTimeWage();
-//EmployeeWageCompute.EmployeeWageSwitchCase();
-//EmployeeWageCompute.MonthlyWage();
-//EmployeeWageCompute.TotalWorkingHours();
-//EmployeeWageCompute.Refactor();
-EmployeeWageCompute.EmployeeWageMultipleCompany("Dmart", 20, 20, 100);
-EmployeeWageCompute.EmployeeWageMultipleCompany("Reliance", 10, 20, 100);
+namespace EmployeeWageProgram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            EmployeeWageCompute.computeEmpWage("DMart", 20, 2, 10);
+            EmployeeWageCompute.computeEmpWage("Reliance", 20, 4, 10);
+        }
+    }
+}
