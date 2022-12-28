@@ -4,5 +4,5 @@ using EmployeeWage;
 Console.WriteLine("Welcome to Employee Wage Computation Program");
 
 Console.WriteLine("Calling Employee Present or Absent");
-EmpPresentAbsent emppresentabsent = new EmpPresentAbsent();
+EmployeeWageCompute emppresentabsent = new EmployeeWageCompute();
 emppresentabsent.PresentAbsent();
