@@ -1,25 +1,17 @@
-﻿using EmployeeWageProgram;
-using static EmployeeWageProgram.EmployeeWageCompute;
+﻿using System;
 
-internal class Program
+namespace EmployeeWageProgram
 {
-    private static void Main(string[] args)
+    internal class Program
     {
-        EmployeeWageCompute EmpPresentAbsent = new EmployeeWageCompute();
-        //EmpPresentAbsent.EmployeePresentAbsent();
-        //EmployeeWageCompute.DailyEmployeeWage();
-        //EmployeeWageCompute.EmployeePartTimeWage();
-        //EmployeeWageCompute.EmployeeWageSwitchCase();
-        //EmployeeWageCompute.MonthlyWage();
-        //EmployeeWageCompute.TotalWorkingHours();
-        //EmployeeWageCompute.Refactor();
-        //EmployeeWageCompute.EmployeeWageMultipleCompany("Dmart", 20, 20, 100);
-        //EmployeeWageCompute.EmployeeWageMultipleCompany("Reliance", 10, 20, 100);
-        EmpWageForMultipleCompany Dmart = new EmpWageForMultipleCompany("Dmart", 20, 20, 100);
-        EmpWageForMultipleCompany Reliance = new EmpWageForMultipleCompany("Reliance", 10, 20, 100);
-        Dmart.ComputeEmpWage();
-        Console.WriteLine(Dmart.ToString());
-        Reliance.ComputeEmpWage();
-        Console.WriteLine(Reliance.ToString());
+        static void Main(string[] args)
+        {
+            EmployeeWageCompute Dmart = new EmployeeWageCompute("Dmart", 20, 2, 10);
+            EmployeeWageCompute Reliance = new EmployeeWageCompute("Reliance", 20, 4, 10);
+            Dmart.computeEmpWage();
+            Console.WriteLine(Dmart.toString());
+            Reliance.computeEmpWage();
+            Console.WriteLine(Reliance.toString());
+        }
     }
 }
