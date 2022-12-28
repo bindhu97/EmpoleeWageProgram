@@ -6,7 +6,7 @@ namespace EmployeeWageProgram
     {
         static void Main(string[] args)
         {
-            EmployeeWageCompute.PresentAbsent();
+            EmployeeWageCompute.EmpWage();
         }
     }
 }
