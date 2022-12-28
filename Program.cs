@@ -1,7 +1,12 @@
-﻿using EmployeeWageProgram;
-using EmployeeWageProgram;
-using static EmployeeWageProgram.EmployeeWageCompute;
+﻿using System;
 
-EmployeeWageCompute EmpPresentAbsent = new EmployeeWageCompute();
-//EmpPresentAbsent.EmployeePresentAbsent;
-EmployeeWageCompute.DailyEmployeeWage();
+namespace EmployeeWageProgram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            EmployeeWageCompute.PresentAbsent();
+        }
+    }
+}
